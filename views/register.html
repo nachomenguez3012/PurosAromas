@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Estilos propios -->
+    <link href="./public/css/style.css" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1>PuroAromas</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="./views/products.html">Productos</a></li>
+                <li><a href="./views/sobreNosotros.html">Nosotros</a></li>
+                <li><a href="./views/login.html">Iniciar sesion</a></li>
+                <li><a href="./views/register.html">Registrarse</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- formulario register -->
+        <div class="formulario-container">
+            <form action="/register" method="POST" enctype="multipart/form-data">
+
+                <div class="titulo-register-conteiner">
+                    <label class="Titulo-register">Registrarme</label><br>
+                </div>
+
+                <div class="errors-email errors">
+                    <label class="titulos-boxs" for="email" class="text-boxs">Email</label><br>
+                    <input class="text-boxs" type="text" name="email">
+                </div>
+
+                <div class="errors-fullName errors">
+                    <label class="titulos-boxs" for="fullName">Nombre y apellido:</label><br>
+                    <input class="text-boxs" type="text" name="fullName" id="name" placeholder="Ej. Florencio Perez">
+                </div>
+
+                <div class="errors-password errors">
+                    <label class="titulos-boxs" for="password">Ingrese una contraseña:</label>
+                    <input class="text-boxs" type="password" name="password" id="pass">
+                </div>
+
+                <div class="errors-confirmPass errors">
+                    <label class="titulos-boxs" for="confirmPass">Confirme la contraseña:</label>
+                    <input class="text-boxs" type="password" name="confirmPass" id="pass-repeat">
+                </div>
+
+                <div class="errors-domicilio errors">
+                    <label class="titulos-boxs" for="domicilio">Domicilio:</label>
+                    <input class="text-boxs" type="text" name="domicilio" id="domicilio"
+                        placeholder="Ej. Cabred 1900"><br>
+                </div>
+
+                <div class="errors-imgUser errors">
+                    <label class="titulos-boxs" for="imgUser">Seleccione una imagen para su perfil:</label><br>
+                    <div class="file-select">
+                        <input class="file" type="file" name="imgUser" accept=".jpg, .png, .jpeg">
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <button class="button-submit" type="submit">Registrarme</button>
+                </div>
+
+                <div class="redirec-login">
+                    <div>
+                        <label">Ya tienes una cuenta?</label>
+                    </div>
+                    <a class="link-inicia-sesion" href="../views/login.html">Inicia sesión</a>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <a href="" target="_blank">
+                <img src="" alt="">
+            </a>
+            <a href="" target="_blank">
+                <img src="" alt="">
+            </a>
+        </div>
+        <div class="texto">
+            <p>2023 - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>

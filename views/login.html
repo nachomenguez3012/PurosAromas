@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Estilos propios -->
+    <link href="./public/css/style.css" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1>PuroAromas</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="./views/products.html">Productos</a></li>
+                <li><a href="./views/sobreNosotros.html">Nosotros</a></li>
+                <li><a href="./views/login.html">Iniciar sesion</a></li>
+                <li><a href="./views/register.html">Registrarse</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Formulario de inicio de sesion -->
+        <div class="formulario-container">
+            <form action="/login" method="POST">
+                <div>
+                    <label>Ingrese nombre de usuario y contraseña</label><br>
+                </div>
+
+                <div>
+                    <input class="box-text" type="email" name="email" id="nombre-de-usuario" placeholder="Usuario">
+                </div>
+
+                <div>
+                    <input class="box-text" type="password" name="password" id="password" placeholder="Contraseña"><br>
+                </div>
+
+                <div class="checkbox">
+                    <div class="option-cb">
+                        <input type="checkbox" name="recordarme" id="recordarme">Recordarme
+                    </div>
+                </div>
+
+                <div>
+                    <button class="boton-inicio-sesion" type="submit">Iniciar Sesion</button><br>
+                </div>
+                <div class="No-tienes-cuenta">
+                    <div>
+                        <label>¿No tienes una cuenta?</label>
+                    </div>
+                    <a href="../views/register.html">Registrate</a>
+                </div>
+
+            </form>
+    </main>
+
+    <footer>
+        <div>
+            <a href="" target="_blank">
+                <img src="" alt="">
+            </a>
+            <a href="" target="_blank">
+                <img src="" alt="">
+            </a>
+        </div>
+        <div class="texto">
+            <p>2023 - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
