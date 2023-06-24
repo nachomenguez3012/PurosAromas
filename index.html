@@ -3,146 +3,138 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Tipogrfia Roboto -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
-    <!-- Libreria Fontawesome-->
-    <script src="https://kit.fontawesome.com/439c181295.js" crossorigin="anonymous"></script>
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-
-    <!-- Estilos propios -->
-    <link href="./public/css/style.css" rel="stylesheet">
-
-    <title>Puro Aromas</title>
+    <!-- Icons Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <!-- Estilos propios-->
+    <link rel="stylesheet" href="./style.css">
+    <title>Puros Aromas</title>
 </head>
 
 <body>
-
-    <header class="header">
-        <h1>PuroAromas</h1>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+    <!-- Header -->
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a href="#" class="navbar-brand"><span class="text-primary">Puros</span>Aromas</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarS"
+                    aria-controls="navbarS" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                <div class="collapse navbar-collapse" id="navbarS">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a href="#" class="nav-link">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                            <a href="#" class="nav-link">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled">Disabled</a>
+                            <a href="#" class="nav-link">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contacto</a>
                         </li>
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
                 </div>
             </div>
         </nav>
+
+        <!-- Carousel-->
+        <div id="carouselE" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselE" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide1"></button>
+                <button type="button" data-bs-target="#carouselE" data-bs-slide-to="1" aria-current="true"
+                    aria-label="Slide2"></button>
+                <button type="button" data-bs-target="#carouselE" data-bs-slide-to="2" aria-current="true"
+                    aria-label="Slide3"></button>
+            </div>
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="./image/home-1.jpg" class="d-block w-100" alt="">
+                    <div class="carousel-caption">
+                        <h5>Nuestros Productos</h5>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, incidunt tempore voluptatum
+                            numquam voluptatem accusamus, rerum ut temporibus dicta reprehenderit odit magnam, eius iste
+                            soluta maiores aspernatur aliquid aperiam sunt.</p>
+                        <a href="#" class="btn btn-primary mt-3">Mas informacion</a>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./image/home-2.jpg" class="d-block w-100" alt="">
+                    <div class="carousel-caption">
+                        <h5>Nuestros Productos</h5>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, incidunt tempore voluptatum
+                            numquam voluptatem accusamus, rerum ut temporibus dicta reprehenderit odit magnam, eius iste
+                            soluta maiores aspernatur aliquid aperiam sunt.</p>
+                        <a href="#" class="btn btn-primary mt-3">Mas informacion</a>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./image/home-3.jpg" class="d-block w-100" alt="">
+                    <div class="carousel-caption">
+                        <h5>Nuestros Productos</h5>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, incidunt tempore voluptatum
+                            numquam voluptatem accusamus, rerum ut temporibus dicta reprehenderit odit magnam, eius iste
+                            soluta maiores aspernatur aliquid aperiam sunt.</p>
+                        <a href="#" class="btn btn-primary mt-3">Mas informacion</a>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselE" data-bs-slide="prev"><span
+                    class="carousel-control-prev-icon" aria-hidden="true"></span><span
+                    class="visually-hidden">previous</span></button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselE" data-bs-slide="next"><span
+                    class="carousel-control-next-icon" aria-hidden="true"></span><span
+                    class="visually-hidden">next</span></button>
+        </div>
     </header>
 
-    <!-- Carousel -->
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="./public/image/Logo Puro Aromas .jpg" class="d-block w-100" alt="foto">
+    <section class="about section-padding">
+
+        <div class=" container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-md-12">
+                    <div class="about-img">
+                        <img src="image/about.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+                    <div class="about-text text-white">
+                        <h2>Hoteles y playas <br>Servicios</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, ipsam porro iure cupiditate
+                            et doloribus consequatur eos error asperiores, sunt voluptatem nesciunt quisquam placeat
+                            magnam earum saepe dignissimos mollitia doloremque.</p>
+                        <a href="#" class="btn btn-primary"> Mas informacion</a>
+                    </div>
+                </div>
             </div>
-            <div class="carousel-item">
-                <img src="./public/image/Logo Puro Aromas .jpg" class="d-block w-100" alt="foto">
-            </div>
-            <div class="carousel-item">
-                <img src="./public/image/Logo Puro Aromas .jpg" class="d-block w-100" alt="foto">
-            </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-
-    <div class="card" style="width: 18rem;">
-        <img src="./public/image/Card 1.png" class="card-img-top" alt="Card-1">
-        <div class="card-body">
-            <h3 class="card-title">Duo box </h3>
-            <p class="card-text">👉Dos jabones surtidos.</p>
-            <p class="card-text">👉Caja estampada con visor.</p>
-            <p class="card-text">👉Flores secas.</p>
-            <p class="card-text">$1600</p>
-            <a href="#" class="btn btn-primary">Agregar producto</a>
-        </div>
-    </div>
-
-    <div class="card" style="width: 18rem;">
-        <img src="./public/image/Card 1.png" class="card-img-top" alt="Card-1">
-        <div class="card-body">
-            <h3 class="card-title">Duo box </h3>
-            <p class="card-text">👉Dos jabones surtidos.</p>
-            <p class="card-text">👉Caja estampada con visor.</p>
-            <p class="card-text">👉Flores secas.</p>
-            <p class="card-text">$1600</p>
-            <a href="#" class="btn btn-primary">Agregar producto</a>
-        </div>
-    </div>
-
-    <main>
-        <div>
-            <h2>Decora tu espacio con muchos Estilos y Aromas</h2>
-            <img src="" alt="">
-            <p>Un espacio bien decorado y amigable hace que seamos mucho mas productivos. Qué estas esperando, mira los
-                modelos de cuadros que tenemos y elegi los que mas se adapten a tus gustos.</p>
-            <a class="boton" href="#">Comprar ahora</a>
-        </div>
-    </main>
-
-    <footer>
-        <div>
-            <a href="" target="_blank">
-                <img src="" alt="">
-            </a>
-            <a href="" target="_blank">
-                <img src="" alt="">
-            </a>
-        </div>
-        <div class="texto">
-            <p>2023 - Todos los derechos reservados.</p>
-        </div>
-    </footer>
-
-    <!-- Script Bootstrap -->
+    </section>
+    <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
 </body>
+
+</html>
