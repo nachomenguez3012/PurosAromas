@@ -95,6 +95,11 @@ font-size: 50px;
     text-align: center;
 }
 
+.portfolio{
+    margin-top: 100px;
+}
+
+
 @media(max-width:767px){
     .navbar-nav {
         text-align: center;
